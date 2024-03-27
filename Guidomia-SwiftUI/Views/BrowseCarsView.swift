@@ -16,10 +16,30 @@ struct BrowseCarsView: View {
                 list(of: viewModel.listCars)
             }
             .frame(maxWidth: .infinity)
-            .navigationTitle("Guidomia")
+            .background(.white)
             .task {
                 await fetchData()
             }
+            .toolbar(.visible)
+            .navigationBarItems(
+                leading:
+                    Text("GUIDOMIA")
+                    .font(.title2)
+                    .foregroundStyle(.white)
+                    .fontWeight(.bold)
+                    .fontDesign(.serif)
+                ,
+                trailing:
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "line.3.horizontal")
+                            .imageScale(.large)
+                            .foregroundStyle(.white)
+                    }
+            )
+            .navigationBarBackground()
+            .preferredColorScheme(.dark)
         }
     }
     
@@ -60,11 +80,13 @@ struct BrowseCarsView: View {
                 .frame(maxWidth: .infinity)
                 .listRowSeparator(.hidden)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .background(.white)
             }
         }
         .listStyle(.plain)
         .frame( maxWidth: .infinity)
         .edgesIgnoringSafeArea(.horizontal)
+        .background(.white)
     }
 }
 

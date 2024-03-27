@@ -34,7 +34,6 @@ struct ImageCarouselView: View {
             }
             .edgesIgnoringSafeArea(.horizontal)
             .frame(maxWidth: .infinity)
-            .background(.blue)
         }
         .frame(height: 280)
         .frame(maxWidth: .infinity)

@@ -33,7 +33,7 @@ struct BulletedListView: View {
             }
         }
         .frame(maxWidth: .infinity)
-        .background(Color(.systemGray5))
+        .background(Color.GLightGray)
     }
 }
 

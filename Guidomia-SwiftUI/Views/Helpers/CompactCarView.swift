@@ -26,7 +26,7 @@ struct CompactCarView: View {
         .listRowInsets(EdgeInsets())
         .padding(.vertical, Layout.standard)
         .frame(maxWidth: .infinity)
-        .background(Color(.systemGray5))
+        .background(Color.GLightGray)
     }
 }
 

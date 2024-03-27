@@ -38,6 +38,7 @@
 		BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */; };
 		BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */; };
 		BCBF19F22BB451D500B8E855 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F12BB451D500B8E855 /* ColorExtension.swift */; };
+		BCBF19F62BB45E1600B8E855 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedListView.swift; sourceTree = "<group>"; };
 		BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		BCBF19F12BB451D500B8E855 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +274,7 @@
 				BCBF19E82BB4217600B8E855 /* CompactCarView.swift */,
 				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
 				BCBF19F12BB451D500B8E855 /* ColorExtension.swift */,
+				BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				BCBF19DA2BB4028300B8E855 /* Rating.swift in Sources */,
 				BCBF19E62BB41F3500B8E855 /* CDCar+CoreDataClass.swift in Sources */,
 				BCBF19E72BB41F3500B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
+				BCBF19F62BB45E1600B8E855 /* ViewExtension.swift in Sources */,
 				BCBF198F2BB3917600B8E855 /* Car.swift in Sources */,
 				BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */,
 				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,

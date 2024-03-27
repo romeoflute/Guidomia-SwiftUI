@@ -27,7 +27,7 @@ struct ExpandedCarView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.bottom, Layout.mediumStandard)
-        .background(Color(.systemGray5))
+        .background(Color.GLightGray)
         
     }
 }
