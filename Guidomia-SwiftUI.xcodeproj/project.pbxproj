@@ -39,6 +39,7 @@
 		BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */; };
 		BCBF19F22BB451D500B8E855 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F12BB451D500B8E855 /* ColorExtension.swift */; };
 		BCBF19F62BB45E1600B8E855 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */; };
+		BCBF19F82BB4657800B8E855 /* CarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F72BB4657800B8E855 /* CarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 		BCBF19F12BB451D500B8E855 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		BCBF19F72BB4657800B8E855 /* CarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 				BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */,
 				BCBF19D92BB4028300B8E855 /* Rating.swift */,
 				BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */,
+				BCBF19F72BB4657800B8E855 /* CarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				BCBF19CA2BB3EAB700B8E855 /* BrowseCarsViewModel.swift in Sources */,
 				BCBF199C2BB3C0A500B8E855 /* DataError.swift in Sources */,
 				BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */,
+				BCBF19F82BB4657800B8E855 /* CarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

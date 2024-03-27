@@ -56,31 +56,8 @@ struct BrowseCarsView: View {
                 .frame(maxWidth: .infinity)
                 .listRowSeparator(.hidden)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-            ForEach(cars, id: \.id) {car in
-                VStack(spacing: 10) {
-                    VStack(alignment: .leading, spacing: Layout.standard) {
-                        if let selectedCar = viewModel.selectedCar,  selectedCar.id == car.id {
-                            ExpandedCarView(car: car)
-                        } else {
-                            CompactCarView(car: car)
-                                .onTapGesture {
-                                    viewModel.selectedCar = car
-                                }
-                        }
-                        
-                        Divider()
-                            .frame(height: 4)
-                            .background(Color.GOrange)
-                            .padding(.bottom, Layout.standard)
-                            .padding(.horizontal, Layout.standard)
-                    }
-                    .frame(maxWidth: .infinity)
-                }
-                .edgesIgnoringSafeArea(.horizontal)
-                .frame(maxWidth: .infinity)
-                .listRowSeparator(.hidden)
-                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-                .background(.white)
+            ForEach(cars, id: \.id) { car in
+                CarView(viewModel: viewModel, car: car)
             }
         }
         .listStyle(.plain)
