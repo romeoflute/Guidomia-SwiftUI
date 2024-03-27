@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23A344" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="CDCar" representedClassName="CDCar" syncable="YES">
-        <attribute name="customerPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="make" optional="YES" attributeType="String"/>
-        <attribute name="marketPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="model" optional="YES" attributeType="String"/>
-        <attribute name="rating" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="customerPrice" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="imageName" attributeType="String"/>
+        <attribute name="make" attributeType="String"/>
+        <attribute name="marketPrice" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="model" attributeType="String"/>
+        <attribute name="rating" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="consList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Con" inverseName="car" inverseEntity="Con"/>
         <relationship name="prosList" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Pro" inverseName="car" inverseEntity="Pro"/>
     </entity>

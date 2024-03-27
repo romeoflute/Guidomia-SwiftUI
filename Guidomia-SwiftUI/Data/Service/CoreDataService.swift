@@ -34,10 +34,12 @@ final class CoreDataService: DataFetchService {
 extension CoreDataService: DataSaveService {
     /// Implements DataSaveService to save cars to core data
     static func saveCars(_ cars: [Car], context: NSManagedObjectContext) throws {
-        let _ = Car.convertToCDCars(cars, context: context)
+        let cdCars = Car.convertToCDCars(cars, context: context)
+        debugPrint("cdCars: \(cdCars)")
         do {
             try context.save()
         } catch {
+            debugPrint("error in saveCars() \(error.localizedDescription)")
             throw DataError.unableToSaveInCoreData
         }
     }

@@ -24,6 +24,7 @@ final class OrchestrateDataService: DataFetchService {
                 return carsFromFile
             }
         } catch {
+            debugPrint("error loading from coredata: \(error.localizedDescription)")
             throw error
         }
     }

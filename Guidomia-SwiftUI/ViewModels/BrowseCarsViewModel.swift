@@ -20,9 +20,10 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
     
     func fetchData() async {
         do {
-            var cars = try await dataOrchestrator.loadCars()
+            let cars = try await dataOrchestrator.loadCars()
             
             self.cars = sortCarsByRating(cars, highestRatingOnTop: true)
+            debugPrint("sorted cars: \(self.cars)")
         } catch {
             self.error = error
         }

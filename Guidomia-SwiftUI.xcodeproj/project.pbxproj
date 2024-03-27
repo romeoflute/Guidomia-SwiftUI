@@ -21,15 +21,15 @@
 		BCBF19992BB3BEAC00B8E855 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */; };
 		BCBF199C2BB3C0A500B8E855 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF199B2BB3C0A500B8E855 /* DataError.swift */; };
 		BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */; };
-		BCBF19BD2BB3C8D300B8E855 /* Con+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */; };
-		BCBF19BE2BB3C8D300B8E855 /* Con+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */; };
-		BCBF19BF2BB3C8D300B8E855 /* Pro+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */; };
-		BCBF19C02BB3C8D300B8E855 /* Pro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */; };
-		BCBF19C12BB3C8D300B8E855 /* CDCar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */; };
-		BCBF19C22BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */; };
 		BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */; };
 		BCBF19CA2BB3EAB700B8E855 /* BrowseCarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19C92BB3EAB700B8E855 /* BrowseCarsViewModel.swift */; };
 		BCBF19CC2BB3F05600B8E855 /* BrowseCarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19CB2BB3F05600B8E855 /* BrowseCarsView.swift */; };
+		BCBF19D32BB3FB9700B8E855 /* Con+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19CD2BB3FB9700B8E855 /* Con+CoreDataClass.swift */; };
+		BCBF19D42BB3FB9700B8E855 /* Con+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19CE2BB3FB9700B8E855 /* Con+CoreDataProperties.swift */; };
+		BCBF19D52BB3FB9700B8E855 /* CDCar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19CF2BB3FB9700B8E855 /* CDCar+CoreDataClass.swift */; };
+		BCBF19D62BB3FB9700B8E855 /* CDCar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19D02BB3FB9700B8E855 /* CDCar+CoreDataProperties.swift */; };
+		BCBF19D72BB3FB9700B8E855 /* Pro+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19D12BB3FB9700B8E855 /* Pro+CoreDataClass.swift */; };
+		BCBF19D82BB3FB9700B8E855 /* Pro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19D22BB3FB9700B8E855 /* Pro+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +67,15 @@
 		BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		BCBF199B2BB3C0A500B8E855 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
 		BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveService.swift; sourceTree = "<group>"; };
-		BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrchestrateDataService.swift; sourceTree = "<group>"; };
 		BCBF19C92BB3EAB700B8E855 /* BrowseCarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCarsViewModel.swift; sourceTree = "<group>"; };
 		BCBF19CB2BB3F05600B8E855 /* BrowseCarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseCarsView.swift; sourceTree = "<group>"; };
+		BCBF19CD2BB3FB9700B8E855 /* Con+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19CE2BB3FB9700B8E855 /* Con+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19CF2BB3FB9700B8E855 /* CDCar+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19D02BB3FB9700B8E855 /* CDCar+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19D12BB3FB9700B8E855 /* Pro+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19D22BB3FB9700B8E855 /* Pro+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,13 +191,13 @@
 		BCBF19912BB3B93B00B8E855 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */,
-				BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */,
-				BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */,
-				BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */,
-				BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */,
-				BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */,
 				BCBF19922BB3B98B00B8E855 /* Cars.xcdatamodeld */,
+				BCBF19CD2BB3FB9700B8E855 /* Con+CoreDataClass.swift */,
+				BCBF19CE2BB3FB9700B8E855 /* Con+CoreDataProperties.swift */,
+				BCBF19CF2BB3FB9700B8E855 /* CDCar+CoreDataClass.swift */,
+				BCBF19D02BB3FB9700B8E855 /* CDCar+CoreDataProperties.swift */,
+				BCBF19D12BB3FB9700B8E855 /* Pro+CoreDataClass.swift */,
+				BCBF19D22BB3FB9700B8E855 /* Pro+CoreDataProperties.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -380,18 +380,18 @@
 			files = (
 				BCBF19992BB3BEAC00B8E855 /* CoreDataService.swift in Sources */,
 				BCBF19942BB3B98B00B8E855 /* Cars.xcdatamodeld in Sources */,
-				BCBF19BD2BB3C8D300B8E855 /* Con+CoreDataClass.swift in Sources */,
 				BCBF19CC2BB3F05600B8E855 /* BrowseCarsView.swift in Sources */,
-				BCBF19BE2BB3C8D300B8E855 /* Con+CoreDataProperties.swift in Sources */,
-				BCBF19BF2BB3C8D300B8E855 /* Pro+CoreDataClass.swift in Sources */,
-				BCBF19C02BB3C8D300B8E855 /* Pro+CoreDataProperties.swift in Sources */,
 				BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */,
-				BCBF19C12BB3C8D300B8E855 /* CDCar+CoreDataClass.swift in Sources */,
-				BCBF19C22BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
 				BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */,
 				BCBF19972BB3BDD000B8E855 /* DataFetchService.swift in Sources */,
 				BCBF198F2BB3917600B8E855 /* Car.swift in Sources */,
 				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,
+				BCBF19D32BB3FB9700B8E855 /* Con+CoreDataClass.swift in Sources */,
+				BCBF19D42BB3FB9700B8E855 /* Con+CoreDataProperties.swift in Sources */,
+				BCBF19D52BB3FB9700B8E855 /* CDCar+CoreDataClass.swift in Sources */,
+				BCBF19D62BB3FB9700B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
+				BCBF19D72BB3FB9700B8E855 /* Pro+CoreDataClass.swift in Sources */,
+				BCBF19D82BB3FB9700B8E855 /* Pro+CoreDataProperties.swift in Sources */,
 				BCBF19CA2BB3EAB700B8E855 /* BrowseCarsViewModel.swift in Sources */,
 				BCBF199C2BB3C0A500B8E855 /* DataError.swift in Sources */,
 				BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */,

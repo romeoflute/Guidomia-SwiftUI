@@ -22,6 +22,7 @@ extension CDCar {
     @NSManaged public var marketPrice: Double
     @NSManaged public var model: String?
     @NSManaged public var rating: Int64
+    @NSManaged public var imageName: String?
     @NSManaged public var consList: NSSet?
     @NSManaged public var prosList: NSSet?
 
@@ -85,8 +86,10 @@ extension CDCar {
             marketPrice: marketPrice,
             model: model ?? "",
             prosList: allPros,
-            rating: Int(rating))
+            rating: Int(rating),
+            imageName: imageName ?? "")
         
         return car
     }
 }
+

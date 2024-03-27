@@ -13,7 +13,7 @@ struct BrowseCarsView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Cars")
+                list(of: viewModel.cars)
             }
             .navigationTitle("Guidomia")
             .task {
@@ -26,6 +26,14 @@ struct BrowseCarsView: View {
         do {
             await viewModel.fetchData()
             print("cars in view: \(viewModel.cars)")
+        }
+    }
+    
+    func list(of cars: [Car]) -> some View {
+        List(cars) { car in
+            HStack(alignment: .center, spacing: 16) {
+                Image(car.imageName)
+            }
         }
     }
 }
