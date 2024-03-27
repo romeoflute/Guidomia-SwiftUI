@@ -7,26 +7,26 @@
 
 import SwiftUI
 
-final class DataService {
-    func loadCars() {
+final class FileDataService: DataFetchService {
+    func loadCars() async throws -> [Car] {
         let filename = "Cars"
         guard let file = Bundle.main.path(forResource: filename, ofType: "json")
         else {
-            fatalError("Unable to locate file \"\(filename)\" in main bundle.")
+            throw DataError.noFileInBundle
         }
         
         do {
             guard let data = try String(contentsOfFile: file).data(using: .utf8) else {
-                fatalError("No data in file \"\(filename)\" in main bundle.")
+                throw DataError.noDataInFileFromBundle
             }
             let decoder = JSONDecoder()
 
-            if let cars = try? decoder.decode([Car].self, from: data) {
-                print("cars: \(cars)")
+            guard let cars = try? decoder.decode([Car].self, from: data) else {
+                return []
             }
-            
+            return cars
         } catch {
-            fatalError("Unable to load \"\(filename)\" from main bundle:\n\(error)")
+            throw DataError.unparsableJsonFile
         }
     }
 }

@@ -15,8 +15,20 @@
 		BCBF197A2BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19792BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift */; };
 		BCBF197C2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF197B2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift */; };
 		BCBF198A2BB3907800B8E855 /* Cars.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19892BB3907800B8E855 /* Cars.json */; };
-		BCBF198C2BB390A300B8E855 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF198B2BB390A300B8E855 /* DataService.swift */; };
+		BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF198B2BB390A300B8E855 /* FileDataService.swift */; };
 		BCBF198F2BB3917600B8E855 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF198E2BB3917600B8E855 /* Car.swift */; };
+		BCBF19942BB3B98B00B8E855 /* Cars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19922BB3B98B00B8E855 /* Cars.xcdatamodeld */; };
+		BCBF19972BB3BDD000B8E855 /* DataFetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19962BB3BDD000B8E855 /* DataFetchService.swift */; };
+		BCBF19992BB3BEAC00B8E855 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */; };
+		BCBF199C2BB3C0A500B8E855 /* DataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF199B2BB3C0A500B8E855 /* DataError.swift */; };
+		BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */; };
+		BCBF19BD2BB3C8D300B8E855 /* Con+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */; };
+		BCBF19BE2BB3C8D300B8E855 /* Con+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */; };
+		BCBF19BF2BB3C8D300B8E855 /* Pro+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */; };
+		BCBF19C02BB3C8D300B8E855 /* Pro+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */; };
+		BCBF19C12BB3C8D300B8E855 /* CDCar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */; };
+		BCBF19C22BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */; };
+		BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +60,20 @@
 		BCBF19792BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		BCBF197B2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BCBF19892BB3907800B8E855 /* Cars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cars.json; sourceTree = "<group>"; };
-		BCBF198B2BB390A300B8E855 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		BCBF198B2BB390A300B8E855 /* FileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
 		BCBF198E2BB3917600B8E855 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		BCBF19932BB3B98B00B8E855 /* Cars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cars.xcdatamodel; sourceTree = "<group>"; };
+		BCBF19962BB3BDD000B8E855 /* DataFetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetchService.swift; sourceTree = "<group>"; };
+		BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		BCBF199B2BB3C0A500B8E855 /* DataError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataError.swift; sourceTree = "<group>"; };
+		BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSaveService.swift; sourceTree = "<group>"; };
+		BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Con+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrchestrateDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +162,9 @@
 		BCBF19882BB3901100B8E855 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				BCBF19892BB3907800B8E855 /* Cars.json */,
-				BCBF198B2BB390A300B8E855 /* DataService.swift */,
+				BCBF19952BB3BDBE00B8E855 /* Service */,
+				BCBF19912BB3B93B00B8E855 /* CoreData */,
+				BCBF19902BB3B92800B8E855 /* Json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -150,6 +175,41 @@
 				BCBF198E2BB3917600B8E855 /* Car.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BCBF19902BB3B92800B8E855 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF19892BB3907800B8E855 /* Cars.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		BCBF19912BB3B93B00B8E855 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF19B72BB3C8D300B8E855 /* Con+CoreDataClass.swift */,
+				BCBF19B82BB3C8D300B8E855 /* Con+CoreDataProperties.swift */,
+				BCBF19B92BB3C8D300B8E855 /* Pro+CoreDataClass.swift */,
+				BCBF19BA2BB3C8D300B8E855 /* Pro+CoreDataProperties.swift */,
+				BCBF19BB2BB3C8D300B8E855 /* CDCar+CoreDataClass.swift */,
+				BCBF19BC2BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift */,
+				BCBF19922BB3B98B00B8E855 /* Cars.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		BCBF19952BB3BDBE00B8E855 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF19962BB3BDD000B8E855 /* DataFetchService.swift */,
+				BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */,
+				BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */,
+				BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */,
+				BCBF198B2BB390A300B8E855 /* FileDataService.swift */,
+				BCBF199B2BB3C0A500B8E855 /* DataError.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,9 +343,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCBF198C2BB390A300B8E855 /* DataService.swift in Sources */,
+				BCBF19992BB3BEAC00B8E855 /* CoreDataService.swift in Sources */,
+				BCBF19942BB3B98B00B8E855 /* Cars.xcdatamodeld in Sources */,
+				BCBF19BD2BB3C8D300B8E855 /* Con+CoreDataClass.swift in Sources */,
+				BCBF19BE2BB3C8D300B8E855 /* Con+CoreDataProperties.swift in Sources */,
+				BCBF19BF2BB3C8D300B8E855 /* Pro+CoreDataClass.swift in Sources */,
+				BCBF19C02BB3C8D300B8E855 /* Pro+CoreDataProperties.swift in Sources */,
+				BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */,
+				BCBF19C12BB3C8D300B8E855 /* CDCar+CoreDataClass.swift in Sources */,
+				BCBF19C22BB3C8D300B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
+				BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */,
 				BCBF19612BB38E1B00B8E855 /* ContentView.swift in Sources */,
+				BCBF19972BB3BDD000B8E855 /* DataFetchService.swift in Sources */,
 				BCBF198F2BB3917600B8E855 /* Car.swift in Sources */,
+				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,
+				BCBF199C2BB3C0A500B8E855 /* DataError.swift in Sources */,
 				BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -616,6 +688,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCBF19922BB3B98B00B8E855 /* Cars.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCBF19932BB3B98B00B8E855 /* Cars.xcdatamodel */,
+			);
+			currentVersion = BCBF19932BB3B98B00B8E855 /* Cars.xcdatamodel */;
+			name = Cars.xcdatamodeld;
+			path = "/Users/romeoflauta/Desktop/Guidomia-SwiftUI/Guidomia-SwiftUI/Data/CoreData/Cars.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCBF19532BB38E1B00B8E855 /* Project object */;
 }
