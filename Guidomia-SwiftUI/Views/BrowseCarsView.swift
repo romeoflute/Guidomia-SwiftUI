@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  BrowseCarsView.swift
 //  Guidomia-SwiftUI
 //
 //  Created by Romeo Flauta on 3/27/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct BrowseCarsView: View {
     @StateObject var viewModel = BrowseCarsViewModel()
     
     var body: some View {
@@ -32,5 +32,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    BrowseCarsView()
 }
