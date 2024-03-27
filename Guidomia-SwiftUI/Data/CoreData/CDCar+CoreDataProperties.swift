@@ -76,7 +76,7 @@ extension CDCar {
         }
         
         var allPros: [String] = []
-        if let cdProsNSSet = prosList, let cdProsSet = cdProsNSSet as? Set<Con>, cdProsSet.count > 0 {
+        if let cdProsNSSet = prosList, let cdProsSet = cdProsNSSet as? Set<Pro>, cdProsSet.count > 0 {
             allPros = cdProsSet.map { $0.details ?? "" }
             allPros.sort()
         }

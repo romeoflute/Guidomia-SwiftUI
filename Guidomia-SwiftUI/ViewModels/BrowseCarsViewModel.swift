@@ -11,6 +11,7 @@ import Foundation
 final class BrowseCarsViewModel: NSObject, ObservableObject {
     private let dataOrchestrator: DataFetchService
     
+    @Published var selectedCar: Car? = nil
     @Published var listCars: [Car] = []
     @Published var featuredCars: [Car] = []
     @Published var error: Error? = nil

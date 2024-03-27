@@ -33,30 +33,22 @@ struct BrowseCarsView: View {
         List(cars) { car in
             VStack(spacing: 10) {
                 VStack(alignment: .leading, spacing: Layout.standard) {
-                    HStack(alignment: .center, spacing: Layout.mediumStandard) {
-                        Image(car.imageName)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 120)
-                            .padding(.leading, Layout.standard)
-                        VStack(alignment: .leading, spacing: 6) {
-                            CarHeadlineView(car: car)
-                            Rating(car: car)
-                        }
-                        Spacer()
+                    if let selectedCar = viewModel.selectedCar,  selectedCar.id == car.id {
+                       ExpandedCarView(car: car)
+                    } else {
+                        CompactCarView(car: car)
+                            .onTapGesture {
+                                viewModel.selectedCar = car
+                            }
                     }
-                    .listRowInsets(EdgeInsets())
-                    .padding(.vertical, Layout.standard)
                     
-                    .frame(maxWidth: .infinity)
-                    .background(Color(.systemGray5))
                     Divider()
                         .frame(height: 2)
                         .background(Color(.systemOrange))
                         .padding(.bottom, Layout.standard)
                         .padding(.horizontal, Layout.standard)
                 }
-                
+                .frame(maxWidth: .infinity)
             }
             .edgesIgnoringSafeArea(.horizontal)
             .frame(maxWidth: .infinity)

@@ -33,6 +33,9 @@
 		BCBF19DF2BB4151200B8E855 /* CarHeadlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */; };
 		BCBF19E62BB41F3500B8E855 /* CDCar+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19E42BB41F3500B8E855 /* CDCar+CoreDataClass.swift */; };
 		BCBF19E72BB41F3500B8E855 /* CDCar+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19E52BB41F3500B8E855 /* CDCar+CoreDataProperties.swift */; };
+		BCBF19E92BB4217600B8E855 /* CompactCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19E82BB4217600B8E855 /* CompactCarView.swift */; };
+		BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */; };
+		BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +85,9 @@
 		BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHeadlineView.swift; sourceTree = "<group>"; };
 		BCBF19E42BB41F3500B8E855 /* CDCar+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BCBF19E52BB41F3500B8E855 /* CDCar+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CDCar+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BCBF19E82BB4217600B8E855 /* CompactCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactCarView.swift; sourceTree = "<group>"; };
+		BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedCarView.swift; sourceTree = "<group>"; };
+		BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +250,7 @@
 				BCBF19CB2BB3F05600B8E855 /* BrowseCarsView.swift */,
 				BCBF19D92BB4028300B8E855 /* Rating.swift */,
 				BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */,
+				BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -260,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				BCBF19DC2BB4135100B8E855 /* Layout.swift */,
+				BCBF19E82BB4217600B8E855 /* CompactCarView.swift */,
+				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -396,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBF19992BB3BEAC00B8E855 /* CoreDataService.swift in Sources */,
+				BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */,
 				BCBF19942BB3B98B00B8E855 /* Cars.xcdatamodeld in Sources */,
 				BCBF19CC2BB3F05600B8E855 /* BrowseCarsView.swift in Sources */,
 				BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */,
@@ -405,7 +415,9 @@
 				BCBF19E62BB41F3500B8E855 /* CDCar+CoreDataClass.swift in Sources */,
 				BCBF19E72BB41F3500B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
 				BCBF198F2BB3917600B8E855 /* Car.swift in Sources */,
+				BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */,
 				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,
+				BCBF19E92BB4217600B8E855 /* CompactCarView.swift in Sources */,
 				BCBF19D32BB3FB9700B8E855 /* Con+CoreDataClass.swift in Sources */,
 				BCBF19D42BB3FB9700B8E855 /* Con+CoreDataProperties.swift in Sources */,
 				BCBF19DD2BB4135100B8E855 /* Layout.swift in Sources */,

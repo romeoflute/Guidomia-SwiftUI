@@ -22,7 +22,7 @@ final class CoreDataService: DataFetchService {
         let context = container.viewContext
         do {
             let cdCars: [CDCar] = try context.fetch(fetchRequest) as? [CDCar] ?? []
-            debugPrint("cd cars: \(cdCars.count)")
+            debugPrint("cd cars: \(cdCars)")
             return Car.convertFromCDCars(cdCars)
         } catch {
             debugPrint("error in Orchestrate? \(error.localizedDescription)")
