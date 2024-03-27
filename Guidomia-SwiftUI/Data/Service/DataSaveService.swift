@@ -6,7 +6,8 @@
 //
 
 import Foundation
+import CoreData
 
 protocol DataSaveService {
-    func saveCars(_ cars: [Car]) throws
+    static func saveCars(_ cars: [Car], context: NSManagedObjectContext) throws
 }

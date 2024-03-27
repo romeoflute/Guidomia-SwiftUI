@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 final class OrchestrateDataService: DataFetchService, ObservableObject {
     let fileDatabaseService = FileDataService()
@@ -14,12 +15,14 @@ final class OrchestrateDataService: DataFetchService, ObservableObject {
     @Published var cars: [Car] = []
     
     func loadCars() async throws -> [Car] {
+        let context: NSManagedObjectContext = localDatabaseService.container.viewContext
         do {
             let carsFromCoreData = try await localDatabaseService.loadCars()
             if carsFromCoreData.count > 0 {
                 return carsFromCoreData
             } else {
                 let carsFromFile = try await fileDatabaseService.loadCars()
+                try CoreDataService.saveCars(carsFromFile, context: context)
                 return carsFromFile
             }
         } catch {
