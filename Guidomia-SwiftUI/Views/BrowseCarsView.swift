@@ -26,7 +26,7 @@ struct BrowseCarsView: View {
     func fetchData() async {
         do {
             await viewModel.fetchData()
-            print("cars in view: \(viewModel.cars.count)")
+            print("cars in view: \(viewModel.cars)")
         }
     }
 }
