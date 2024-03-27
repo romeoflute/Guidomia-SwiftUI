@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var cars: [Car] = []
+    @StateObject var viewModel = BrowseCarsViewModel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -24,10 +25,8 @@ struct ContentView: View {
     
     func fetchData() async {
         do {
-            let cars = try await OrchestrateDataService().loadCars()
-            print("cars in view: \(cars)")
-        } catch {
-            print("error in view: \(error.localizedDescription)")
+            await viewModel.fetchData()
+            print("cars in view: \(viewModel.cars.count)")
         }
     }
 }

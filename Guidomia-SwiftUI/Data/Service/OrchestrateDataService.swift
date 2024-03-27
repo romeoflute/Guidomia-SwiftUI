@@ -8,12 +8,10 @@
 import Foundation
 import CoreData
 
-final class OrchestrateDataService: DataFetchService, ObservableObject {
+final class OrchestrateDataService: DataFetchService {
     let fileDatabaseService = FileDataService()
     let localDatabaseService = CoreDataService()
-    
-    @Published var cars: [Car] = []
-    
+        
     func loadCars() async throws -> [Car] {
         let context: NSManagedObjectContext = localDatabaseService.container.viewContext
         do {
