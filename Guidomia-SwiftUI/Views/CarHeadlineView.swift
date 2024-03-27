@@ -43,5 +43,5 @@ struct CarHeadlineView: View {
 }
 
 #Preview {
-    CarHeadlineView(car: Car(consList: [], customerPrice: 50000, make: "Land Rover", marketPrice: 225000, model: "Range Rover", prosList: [], rating: 5, imageName: ""))
+    CarHeadlineView(car: Car(consList: [], customerPrice: 50000, make: "Land Rover", marketPrice: 225000, model: "Range Rover", prosList: [], rating: 5, imageName: "", isFeatured: false))
 }

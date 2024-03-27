@@ -13,7 +13,7 @@ struct BrowseCarsView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                list(of: viewModel.cars)
+                list(of: viewModel.listCars)
             }
             .frame(maxWidth: .infinity)
             .navigationTitle("Guidomia")
@@ -26,7 +26,6 @@ struct BrowseCarsView: View {
     func fetchData() async {
         do {
             await viewModel.fetchData()
-            print("cars in view: \(viewModel.cars)")
         }
     }
     

@@ -18,6 +18,7 @@ struct Car: Codable, Identifiable, Hashable {
     let prosList: [String]
     let rating: Int
     let imageName: String
+    let isFeatured: Bool
 }
 
 extension Car {
@@ -30,6 +31,7 @@ extension Car {
         cdCar.model = self.model
         cdCar.rating = Int64(self.rating)
         cdCar.imageName = self.imageName
+        cdCar.isFeatured = self.isFeatured
         
         for oneCon in self.consList {
             let con = Con(context: context)

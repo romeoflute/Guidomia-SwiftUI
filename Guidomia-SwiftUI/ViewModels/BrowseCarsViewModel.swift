@@ -11,7 +11,8 @@ import Foundation
 final class BrowseCarsViewModel: NSObject, ObservableObject {
     private let dataOrchestrator: DataFetchService
     
-    @Published var cars: [Car] = []
+    @Published var listCars: [Car] = []
+    @Published var featuredCars: [Car] = []
     @Published var error: Error? = nil
     
     init(dataOrchestrator: DataFetchService = OrchestrateDataService()) {
@@ -21,14 +22,13 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
     func fetchData() async {
         do {
             let cars = try await dataOrchestrator.loadCars()
-            self.cars = sortCarsByPrice(cars, highestOnTop: true)
+            let listCars = cars.filter { !$0.isFeatured }
+            let featuredCars = cars.filter { $0.isFeatured }
+            self.featuredCars = sortCarsByPrice(featuredCars, highestOnTop: true)
+            self.listCars = sortCarsByPrice(listCars, highestOnTop: true)
         } catch {
             self.error = error
         }
-    }
-    
-    func featureTopRated() -> Car? {
-        return cars.first
     }
     
     func sortCarsByPrice(_ cars: [Car], highestOnTop: Bool) -> [Car] {

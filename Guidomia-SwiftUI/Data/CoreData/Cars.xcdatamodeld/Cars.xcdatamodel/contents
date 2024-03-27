@@ -4,6 +4,7 @@
         <attribute name="customerPrice" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="imageName" attributeType="String"/>
+        <attribute name="isFeatured" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="make" attributeType="String"/>
         <attribute name="marketPrice" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="model" attributeType="String"/>
