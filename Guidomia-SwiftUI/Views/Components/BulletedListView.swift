@@ -16,7 +16,7 @@ struct BulletedListView: View {
             Text(title)
                 .font(.subheadline)
                 .fontWeight(.bold)
-                .foregroundStyle(Color(.systemGray))
+                .foregroundStyle(Color.GTextColor)
                 .frame(maxWidth: .infinity, alignment: .leading)
             ForEach(strings, id: \.self) { string in
                 if string.count > 0 {
@@ -27,7 +27,7 @@ struct BulletedListView: View {
                         Text(string)
                             .font(.footnote)
                             .fontWeight(.semibold)
-                            .foregroundStyle(.black)
+                            .foregroundStyle(Color.GBulletedTextColor)
                     }
                 }
             }

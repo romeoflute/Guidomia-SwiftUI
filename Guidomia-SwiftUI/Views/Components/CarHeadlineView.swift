@@ -15,11 +15,11 @@ struct CarHeadlineView: View {
             Text(carTitle())
                 .font(.headline)
                 .fontWeight(.bold)
-                .foregroundStyle(Color(.systemGray))
+                .foregroundStyle(Color.GTextColor)
             Text(displayPrice())
                 .font(.footnote)
                 .fontWeight(.bold)
-                .foregroundStyle(Color(.systemGray))
+                .foregroundStyle(Color.GTextColor)
         }
     }
     
