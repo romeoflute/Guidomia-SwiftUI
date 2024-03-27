@@ -22,7 +22,7 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
         do {
             let cars = try await dataOrchestrator.loadCars()
             
-            self.cars = sortCarsByRating(cars, highestRatingOnTop: true)
+            self.cars = sortCarsByPrice(cars, highestOnTop: true)
             debugPrint("sorted cars: \(self.cars)")
         } catch {
             self.error = error
@@ -33,9 +33,9 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
         return cars.first
     }
     
-    func sortCarsByRating(_ cars: [Car], highestRatingOnTop: Bool) -> [Car] {
+    func sortCarsByPrice(_ cars: [Car], highestOnTop: Bool) -> [Car] {
         return cars.sorted { a, b in
-            return highestRatingOnTop ? a.rating > b.rating : a.rating < b.rating
+            return highestOnTop ? a.customerPrice > b.customerPrice : a.customerPrice < b.customerPrice
         }
     }
 }
