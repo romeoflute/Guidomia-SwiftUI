@@ -27,6 +27,9 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
             let featuredCars = cars.filter { $0.isFeatured }
             self.featuredCars = sortCarsByPrice(featuredCars, highestOnTop: true)
             self.listCars = sortCarsByPrice(listCars, highestOnTop: true)
+            if self.listCars.count > 0 {
+                self.selectedCar = self.listCars.first
+            }
         } catch {
             self.error = error
         }
