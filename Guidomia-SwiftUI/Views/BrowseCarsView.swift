@@ -39,7 +39,6 @@ struct BrowseCarsView: View {
                     }
             )
             .navigationBarBackground()
-            .preferredColorScheme(.dark)
         }
     }
     
@@ -56,7 +55,30 @@ struct BrowseCarsView: View {
                 .frame(maxWidth: .infinity)
                 .listRowSeparator(.hidden)
                 .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
-            ForEach(cars, id: \.id) { car in
+            VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: Layout.standard) {
+                    Text("Filters")
+                        .foregroundStyle(Color.white)
+                    TextField("Any make", text: $viewModel.makeFilter)
+                        .autocorrectionDisabled()
+                        .font(.footnote)
+                        .frame(maxWidth: .infinity)
+                        .textFieldStyle(.roundedBorder)
+                    TextField("Any model", text: $viewModel.modelFilter)
+                        .autocorrectionDisabled()
+                        .font(.footnote)
+                        .frame(maxWidth: .infinity)
+                        .textFieldStyle(.roundedBorder)
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.all, Layout.standard)
+                .background(Color.GDarkGray)
+            }
+            .frame(maxWidth: .infinity)
+            .clipShape(RoundedRectangle(cornerRadius: 6))
+            .background(.white)
+            
+            ForEach(viewModel.filterListedCars(), id: \.id) { car in
                 CarView(viewModel: viewModel, car: car)
             }
         }
