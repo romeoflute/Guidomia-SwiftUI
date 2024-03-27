@@ -50,7 +50,7 @@ struct BrowseCarsView: View {
                         
                         Divider()
                             .frame(height: 4)
-                            .background(Color(.systemRed))
+                            .background(Color.GOrange)
                             .padding(.bottom, Layout.standard)
                             .padding(.horizontal, Layout.standard)
                     }

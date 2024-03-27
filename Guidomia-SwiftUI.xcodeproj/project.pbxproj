@@ -37,6 +37,7 @@
 		BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */; };
 		BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */; };
 		BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */; };
+		BCBF19F22BB451D500B8E855 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19F12BB451D500B8E855 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedCarView.swift; sourceTree = "<group>"; };
 		BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedListView.swift; sourceTree = "<group>"; };
 		BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
+		BCBF19F12BB451D500B8E855 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				BCBF19DC2BB4135100B8E855 /* Layout.swift */,
 				BCBF19E82BB4217600B8E855 /* CompactCarView.swift */,
 				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
+				BCBF19F12BB451D500B8E855 /* ColorExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */,
 				BCBF19942BB3B98B00B8E855 /* Cars.xcdatamodeld in Sources */,
 				BCBF19CC2BB3F05600B8E855 /* BrowseCarsView.swift in Sources */,
+				BCBF19F22BB451D500B8E855 /* ColorExtension.swift in Sources */,
 				BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */,
 				BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */,
 				BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */,

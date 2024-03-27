@@ -15,7 +15,7 @@ struct Rating: View {
             ForEach(1...car.rating, id: \.self) { rate in
                 Image(systemName: "star.fill")
                     .imageScale(.medium)
-                    .foregroundStyle(Color.red)
+                    .foregroundStyle(Color.GOrange)
             }
         }
     }

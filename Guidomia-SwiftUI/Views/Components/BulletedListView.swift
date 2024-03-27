@@ -23,7 +23,7 @@ struct BulletedListView: View {
                     HStack(spacing: 0) {
                         Text("\u{2022} ")
                             .font(.title)
-                            .foregroundStyle(Color(.systemRed))
+                            .foregroundStyle(Color.GOrange)
                         Text(string)
                             .font(.footnote)
                             .fontWeight(.semibold)
