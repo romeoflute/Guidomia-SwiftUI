@@ -28,6 +28,10 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
         }
     }
     
+    func featureTopRated() -> Car? {
+        return cars.first
+    }
+    
     func sortCarsByRating(_ cars: [Car], highestRatingOnTop: Bool) -> [Car] {
         return cars.sorted { a, b in
             return highestRatingOnTop ? a.rating > b.rating : a.rating < b.rating

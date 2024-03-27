@@ -11,15 +11,14 @@ struct BrowseCarsView: View {
     @StateObject var viewModel = BrowseCarsViewModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-        .task {
-            await fetchData()
+        NavigationStack {
+            VStack {
+                Text("Cars")
+            }
+            .navigationTitle("Guidomia")
+            .task {
+                await fetchData()
+            }
         }
     }
     
