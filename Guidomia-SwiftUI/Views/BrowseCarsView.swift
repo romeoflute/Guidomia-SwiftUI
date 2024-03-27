@@ -30,31 +30,37 @@ struct BrowseCarsView: View {
     }
     
     func list(of cars: [Car]) -> some View {
-        List(cars) { car in
-            VStack(spacing: 10) {
-                VStack(alignment: .leading, spacing: Layout.standard) {
-                    if let selectedCar = viewModel.selectedCar,  selectedCar.id == car.id {
-                       ExpandedCarView(car: car)
-                    } else {
-                        CompactCarView(car: car)
-                            .onTapGesture {
-                                viewModel.selectedCar = car
-                            }
-                    }
-                    
-                    Divider()
-                        .frame(height: 2)
-                        .background(Color(.systemOrange))
-                        .padding(.bottom, Layout.standard)
-                        .padding(.horizontal, Layout.standard)
-                }
+        List {
+            ImageCarouselView(featuredCars: viewModel.featuredCars)
+                .edgesIgnoringSafeArea(.horizontal)
                 .frame(maxWidth: .infinity)
+                .listRowSeparator(.hidden)
+                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
+            ForEach(cars, id: \.id) {car in
+                VStack(spacing: 10) {
+                    VStack(alignment: .leading, spacing: Layout.standard) {
+                        if let selectedCar = viewModel.selectedCar,  selectedCar.id == car.id {
+                            ExpandedCarView(car: car)
+                        } else {
+                            CompactCarView(car: car)
+                                .onTapGesture {
+                                    viewModel.selectedCar = car
+                                }
+                        }
+                        
+                        Divider()
+                            .frame(height: 2)
+                            .background(Color(.systemRed))
+                            .padding(.bottom, Layout.standard)
+                            .padding(.horizontal, Layout.standard)
+                    }
+                    .frame(maxWidth: .infinity)
+                }
+                .edgesIgnoringSafeArea(.horizontal)
+                .frame(maxWidth: .infinity)
+                .listRowSeparator(.hidden)
+                .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
             }
-            .edgesIgnoringSafeArea(.horizontal)
-            .frame(maxWidth: .infinity)
-            .edgesIgnoringSafeArea(.horizontal)
-            .listRowSeparator(.hidden)
-            .listRowInsets(.init(top: 0, leading: 0, bottom: 0, trailing: 0))
         }
         .listStyle(.plain)
         .frame( maxWidth: .infinity)

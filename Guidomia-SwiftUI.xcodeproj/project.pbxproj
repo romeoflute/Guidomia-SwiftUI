@@ -36,6 +36,7 @@
 		BCBF19E92BB4217600B8E855 /* CompactCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19E82BB4217600B8E855 /* CompactCarView.swift */; };
 		BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */; };
 		BCBF19ED2BB4273900B8E855 /* BulletedListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */; };
+		BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BCBF19E82BB4217600B8E855 /* CompactCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompactCarView.swift; sourceTree = "<group>"; };
 		BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedCarView.swift; sourceTree = "<group>"; };
 		BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletedListView.swift; sourceTree = "<group>"; };
+		BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,11 +248,9 @@
 		BCBF19C72BB3EA6400B8E855 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BCBF19DB2BB4134100B8E855 /* Helpers */,
 				BCBF19CB2BB3F05600B8E855 /* BrowseCarsView.swift */,
-				BCBF19D92BB4028300B8E855 /* Rating.swift */,
-				BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */,
-				BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */,
+				BCBF19EE2BB43F1400B8E855 /* Components */,
+				BCBF19DB2BB4134100B8E855 /* Helpers */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -271,6 +271,17 @@
 				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BCBF19EE2BB43F1400B8E855 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */,
+				BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */,
+				BCBF19D92BB4028300B8E855 /* Rating.swift */,
+				BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +421,7 @@
 				BCBF19CC2BB3F05600B8E855 /* BrowseCarsView.swift in Sources */,
 				BCBF19C42BB3DE8C00B8E855 /* OrchestrateDataService.swift in Sources */,
 				BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */,
+				BCBF19F02BB43F4800B8E855 /* ImageCarouselView.swift in Sources */,
 				BCBF19972BB3BDD000B8E855 /* DataFetchService.swift in Sources */,
 				BCBF19DA2BB4028300B8E855 /* Rating.swift in Sources */,
 				BCBF19E62BB41F3500B8E855 /* CDCar+CoreDataClass.swift in Sources */,
