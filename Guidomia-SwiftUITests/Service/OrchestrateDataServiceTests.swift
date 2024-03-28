@@ -31,6 +31,42 @@ final class OrchestrateDataServiceTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        CoreDataTestsUtil.shared.deleteAllData(container: container)
+        
+        sut = nil
+        container = nil
+        fileDatabaseService = nil
+        localDatabaseService = nil
+    }
+    
+    func test_loadCarsFromCoreDataWithoutPriorSaving_fetchesNoCar() async {
+        do {
+            let coreDataCars = try await sut.localDatabaseService.loadCars()
+            XCTAssertEqual(coreDataCars.count, 0)
+        } catch {
+            XCTFail("Failed to load cars from CoreData")
+        }
+    }
+    
+    func test_loadCarsFromOrchestrate_fetchesCarsInFile() async {
+        do {
+            let orchestrateCars = try await sut.loadCars()
+            XCTAssertEqual(orchestrateCars.count, 5)
+        } catch {
+            XCTFail("Failed to load cars from Orchestrate")
+        }
+    }
+    
+    func test_loadCarsFromCoreDataAfterLoadCarsFromOrchestrate_fetchesCarsInCoreData() async {
+        do {
+            let orchestrateCars = try await sut.loadCars()
+            XCTAssertEqual(orchestrateCars.count, 5)
+            
+            let coreDataCars = try await sut.localDatabaseService.loadCars()
+            XCTAssertEqual(coreDataCars.count, 5)
+            XCTAssertEqual(coreDataCars.count, orchestrateCars.count)
+        } catch {
+            XCTFail("Failed to load cars from CoreData or Orchestrate")
+        }
     }
 }

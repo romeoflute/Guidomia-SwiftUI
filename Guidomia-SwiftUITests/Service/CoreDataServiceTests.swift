@@ -22,7 +22,7 @@ final class CoreDataServiceTests: XCTestCase {
                 self.container = container
                 self.sut = CoreDataService(container: container)
             case .failure(let error):
-                debugPrint("Unable to create container")
+                debugPrint("Unable to create container: \(error.localizedDescription)")
             }
         })
     }
