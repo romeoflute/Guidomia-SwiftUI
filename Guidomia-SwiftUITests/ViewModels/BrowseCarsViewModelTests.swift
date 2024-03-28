@@ -105,4 +105,17 @@ final class BrowseCarsViewModelTests: XCTestCase {
         XCTAssertEqual(cars.count, 1)
         XCTAssertNil(sut.error)
     }
+    
+    @MainActor func test_sortingByPrice_ReturnsSortedCars() async {
+        
+        await sut.fetchData()
+        
+        var cars = sut.sortCarsByPrice(sut.listCars, highestOnTop: false)
+        
+        XCTAssertEqual(cars.first?.customerPrice, 65000)
+        cars = sut.sortCarsByPrice(sut.listCars, highestOnTop: true)
+        XCTAssertEqual(cars.first?.customerPrice, 220000.0)
+    }
+    
+    
 }
