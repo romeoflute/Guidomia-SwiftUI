@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BC9BDF152BB5229400170086 /* CoreDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9BDF142BB5229400170086 /* CoreDataServiceTests.swift */; };
+		BC9BDF172BB536A800170086 /* OrchestrateDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9BDF162BB536A800170086 /* OrchestrateDataServiceTests.swift */; };
+		BC9BDF1A2BB5394900170086 /* CoreDataTestsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9BDF192BB5394900170086 /* CoreDataTestsUtil.swift */; };
 		BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */; };
 		BCBF19632BB38E1F00B8E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19622BB38E1F00B8E855 /* Assets.xcassets */; };
 		BCBF19662BB38E1F00B8E855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19652BB38E1F00B8E855 /* Preview Assets.xcassets */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		BC9BDF142BB5229400170086 /* CoreDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServiceTests.swift; sourceTree = "<group>"; };
+		BC9BDF162BB536A800170086 /* OrchestrateDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrchestrateDataServiceTests.swift; sourceTree = "<group>"; };
+		BC9BDF192BB5394900170086 /* CoreDataTestsUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestsUtil.swift; sourceTree = "<group>"; };
 		BCBF195B2BB38E1B00B8E855 /* Guidomia-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidomia-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BCBF19622BB38E1F00B8E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC9BDF182BB538C900170086 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC9BDF192BB5394900170086 /* CoreDataTestsUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BCBF19522BB38E1B00B8E855 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +161,7 @@
 		BCBF196E2BB38E1F00B8E855 /* Guidomia-SwiftUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BC9BDF182BB538C900170086 /* Utils */,
 				BCBF80172BB4E0A400E2D18D /* ViewModels */,
 				BCBF80162BB4E09600E2D18D /* Models */,
 				BCBF80152BB4E07300E2D18D /* Service */,
@@ -272,6 +285,7 @@
 			children = (
 				BCBF80182BB4E0EA00E2D18D /* FileDataServiceTests.swift */,
 				BC9BDF142BB5229400170086 /* CoreDataServiceTests.swift */,
+				BC9BDF162BB536A800170086 /* OrchestrateDataServiceTests.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -425,7 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9BDF172BB536A800170086 /* OrchestrateDataServiceTests.swift in Sources */,
 				BC9BDF152BB5229400170086 /* CoreDataServiceTests.swift in Sources */,
+				BC9BDF1A2BB5394900170086 /* CoreDataTestsUtil.swift in Sources */,
 				BCBF80192BB4E0EA00E2D18D /* FileDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
