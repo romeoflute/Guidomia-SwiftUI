@@ -116,6 +116,4 @@ final class BrowseCarsViewModelTests: XCTestCase {
         cars = sut.sortCarsByPrice(sut.listCars, highestOnTop: true)
         XCTAssertEqual(cars.first?.customerPrice, 220000.0)
     }
-    
-    
 }
