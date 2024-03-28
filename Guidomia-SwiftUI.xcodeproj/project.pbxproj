@@ -14,6 +14,7 @@
 		BC9BDF1E2BB5629A00170086 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = BC9BDF1D2BB5629A00170086 /* Readme.md */; };
 		BC9BDF222BB5688300170086 /* browsebottom.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9BDF1F2BB5688300170086 /* browsebottom.png */; };
 		BC9BDF232BB5688300170086 /* browsetop.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9BDF202BB5688300170086 /* browsetop.png */; };
+		BCAEAE042BB633F700EA6B37 /* CarFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */; };
 		BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */; };
 		BCBF19632BB38E1F00B8E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19622BB38E1F00B8E855 /* Assets.xcassets */; };
 		BCBF19662BB38E1F00B8E855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19652BB38E1F00B8E855 /* Preview Assets.xcassets */; };
@@ -65,6 +66,7 @@
 		BC9BDF1D2BB5629A00170086 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		BC9BDF1F2BB5688300170086 /* browsebottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browsebottom.png; sourceTree = "<group>"; };
 		BC9BDF202BB5688300170086 /* browsetop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browsetop.png; sourceTree = "<group>"; };
+		BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFilterView.swift; sourceTree = "<group>"; };
 		BCBF195B2BB38E1B00B8E855 /* Guidomia-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidomia-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BCBF19622BB38E1F00B8E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -291,6 +293,7 @@
 			isa = PBXGroup;
 			children = (
 				BCBF19EC2BB4273900B8E855 /* BulletedListView.swift */,
+				BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */,
 				BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */,
 				BCBF19F72BB4657800B8E855 /* CarView.swift */,
 				BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */,
@@ -445,6 +448,7 @@
 				BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */,
 				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,
 				BCBF19E92BB4217600B8E855 /* CompactCarView.swift in Sources */,
+				BCAEAE042BB633F700EA6B37 /* CarFilterView.swift in Sources */,
 				BCBF19D32BB3FB9700B8E855 /* Con+CoreDataClass.swift in Sources */,
 				BCBF19D42BB3FB9700B8E855 /* Con+CoreDataProperties.swift in Sources */,
 				BCBF19DD2BB4135100B8E855 /* Layout.swift in Sources */,
