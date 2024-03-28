@@ -22,6 +22,7 @@ final class FileDataServiceTests: XCTestCase {
 
     func test_LoadCarsFromCorrectFile_RetrievesCars() async {
         let cars = try? await sut.loadCars()
+        XCTAssertNotNil(cars)
         let expectedCount = cars?.count ?? 0
         XCTAssertEqual(expectedCount, 5)
     }
