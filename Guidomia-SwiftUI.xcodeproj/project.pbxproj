@@ -16,6 +16,7 @@
 		BC9BDF232BB5688300170086 /* browsetop.png in Resources */ = {isa = PBXBuildFile; fileRef = BC9BDF202BB5688300170086 /* browsetop.png */; };
 		BCAEAE042BB633F700EA6B37 /* CarFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */; };
 		BCAEAE072BB636F800EA6B37 /* FilterTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEAE062BB636F800EA6B37 /* FilterTextFieldStyle.swift */; };
+		BCAEAE092BB638CE00EA6B37 /* CarHeadlineStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCAEAE082BB638CE00EA6B37 /* CarHeadlineStyle.swift */; };
 		BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */; };
 		BCBF19632BB38E1F00B8E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19622BB38E1F00B8E855 /* Assets.xcassets */; };
 		BCBF19662BB38E1F00B8E855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19652BB38E1F00B8E855 /* Preview Assets.xcassets */; };
@@ -69,6 +70,7 @@
 		BC9BDF202BB5688300170086 /* browsetop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = browsetop.png; sourceTree = "<group>"; };
 		BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFilterView.swift; sourceTree = "<group>"; };
 		BCAEAE062BB636F800EA6B37 /* FilterTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTextFieldStyle.swift; sourceTree = "<group>"; };
+		BCAEAE082BB638CE00EA6B37 /* CarHeadlineStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarHeadlineStyle.swift; sourceTree = "<group>"; };
 		BCBF195B2BB38E1B00B8E855 /* Guidomia-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guidomia-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIApp.swift; sourceTree = "<group>"; };
 		BCBF19622BB38E1F00B8E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 			children = (
 				BCBF19F52BB45E1600B8E855 /* ColoredNavigationBar.swift */,
 				BCAEAE062BB636F800EA6B37 /* FilterTextFieldStyle.swift */,
+				BCAEAE082BB638CE00EA6B37 /* CarHeadlineStyle.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				BCBF19E62BB41F3500B8E855 /* CDCar+CoreDataClass.swift in Sources */,
 				BCBF19E72BB41F3500B8E855 /* CDCar+CoreDataProperties.swift in Sources */,
 				BCBF19F62BB45E1600B8E855 /* ColoredNavigationBar.swift in Sources */,
+				BCAEAE092BB638CE00EA6B37 /* CarHeadlineStyle.swift in Sources */,
 				BCBF198F2BB3917600B8E855 /* Car.swift in Sources */,
 				BCBF19EB2BB4224100B8E855 /* ExpandedCarView.swift in Sources */,
 				BCBF19B62BB3C71A00B8E855 /* DataSaveService.swift in Sources */,

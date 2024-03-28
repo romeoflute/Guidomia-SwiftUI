@@ -14,12 +14,10 @@ struct CarHeadlineView: View {
         VStack(alignment: .leading, spacing: 2) {
             Text(carTitle())
                 .font(.headline)
-                .fontWeight(.bold)
-                .foregroundStyle(Color.GTextColor)
+                .carHeadlineStyle()
             Text(displayPrice())
                 .font(.footnote)
-                .fontWeight(.bold)
-                .foregroundStyle(Color.GTextColor)
+                .carHeadlineStyle()
         }
     }
     
