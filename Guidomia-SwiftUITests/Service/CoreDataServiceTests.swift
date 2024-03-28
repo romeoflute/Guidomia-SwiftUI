@@ -26,7 +26,7 @@ final class CoreDataServiceTests: XCTestCase {
         container = nil
     }
     
-    func test_saveCars_persistsInCoreData() async {
+    func test_saveCarsAndLoadCars_persistsInCoreData() async {
         let carCount = 4
         let cars = createCars(carCount)
         do {
