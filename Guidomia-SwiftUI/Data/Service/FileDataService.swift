@@ -8,8 +8,13 @@
 import SwiftUI
 
 final class FileDataService: DataFetchService {
+    let filename: String
+    
+    init(filename: String = "Cars") {
+        self.filename = filename
+    }
+    
     func loadCars() async throws -> [Car] {
-        let filename = "Cars"
         guard let file = Bundle.main.path(forResource: filename, ofType: "json")
         else {
             throw DataError.noFileInBundle
