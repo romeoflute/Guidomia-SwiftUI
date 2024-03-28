@@ -54,7 +54,7 @@ final class BrowseCarsViewModel: NSObject, ObservableObject {
         } else if makeFilterString.count > 0 && modelFilterString == "" {
             return listCars.filter { $0.make.lowercased().contains(makeFilterString)}
         } else {
-            return listCars.filter { $0.make.lowercased().contains(makeFilterString) && $0.model.lowercased().contains(modelFilterString) }
+            return listCars.filter { $0.make.lowercased().contains(makeFilterString) || $0.model.lowercased().contains(modelFilterString) }
         }
     }
 }

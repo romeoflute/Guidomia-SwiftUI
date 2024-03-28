@@ -53,4 +53,56 @@ final class BrowseCarsViewModelTests: XCTestCase {
         XCTAssertEqual(sut.makeFilter, "")
         XCTAssertEqual(sut.modelFilter, "")
     }
+    
+    @MainActor func test_whenFiltersAreEmpty_ReturnsOriginalList() async {
+        await sut.fetchData()
+        
+        sut.makeFilter = ""
+        sut.modelFilter = ""
+        
+        let cars = sut.filterListedCars()
+        
+        XCTAssertEqual(sut.featuredCars.count, 1)
+        XCTAssertEqual(sut.listCars.count, 4)
+        XCTAssertNil(sut.error)
+    }
+    
+    @MainActor func test_filteringWithMake_ReturnsFilteredCars() async {
+        await sut.fetchData()
+        
+        sut.makeFilter = "Alpine"
+        sut.modelFilter = ""
+        
+        let cars = sut.filterListedCars()
+        
+        XCTAssertEqual(sut.featuredCars.count, 1)
+        XCTAssertEqual(cars.count, 1)
+        XCTAssertNil(sut.error)
+    }
+    
+    @MainActor func test_filteringWithModel_ReturnsFilteredCars() async {
+        await sut.fetchData()
+        
+        sut.makeFilter = ""
+        sut.modelFilter = "Rover"
+        
+        let cars = sut.filterListedCars()
+        
+        XCTAssertEqual(sut.featuredCars.count, 1)
+        XCTAssertEqual(cars.count, 1)
+        XCTAssertNil(sut.error)
+    }
+    
+    @MainActor func test_filteringWithModelAndMake_ReturnsFilteredCars() async {
+        await sut.fetchData()
+        
+        sut.makeFilter = "Alpine"
+        sut.modelFilter = "Roadster"
+        
+        let cars = sut.filterListedCars()
+        
+        XCTAssertEqual(sut.featuredCars.count, 1)
+        XCTAssertEqual(cars.count, 1)
+        XCTAssertNil(sut.error)
+    }
 }
