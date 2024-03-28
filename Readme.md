@@ -38,7 +38,7 @@ My research [indicates](https://forum.juce.com/t/addinstanceforfactory-no-factor
 
 ## Screenshots
 
-| Browsing | Details |
-| -------- | ------- |
+| Browsing top | Browsing bottom |
+| ------------ | --------------- |
 | ![](img/browsetop.png) | ![](img/browsebottom.png) |
 
