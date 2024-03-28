@@ -281,8 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				BCBF19F12BB451D500B8E855 /* ColorExtension.swift */,
-				BCBF19E82BB4217600B8E855 /* CompactCarView.swift */,
-				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
 				BCBF19DC2BB4135100B8E855 /* Layout.swift */,
 				BCBF19F52BB45E1600B8E855 /* ViewExtension.swift */,
 			);
@@ -296,6 +294,8 @@
 				BCAEAE032BB633F700EA6B37 /* CarFilterView.swift */,
 				BCBF19DE2BB4151200B8E855 /* CarHeadlineView.swift */,
 				BCBF19F72BB4657800B8E855 /* CarView.swift */,
+				BCBF19E82BB4217600B8E855 /* CompactCarView.swift */,
+				BCBF19EA2BB4224100B8E855 /* ExpandedCarView.swift */,
 				BCBF19EF2BB43F4800B8E855 /* ImageCarouselView.swift */,
 				BCBF19D92BB4028300B8E855 /* Rating.swift */,
 			);
