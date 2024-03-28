@@ -227,12 +227,12 @@
 		BCBF19952BB3BDBE00B8E855 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				BCBF19962BB3BDD000B8E855 /* DataFetchService.swift */,
-				BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */,
-				BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */,
 				BCBF19982BB3BEAC00B8E855 /* CoreDataService.swift */,
-				BCBF198B2BB390A300B8E855 /* FileDataService.swift */,
 				BCBF199B2BB3C0A500B8E855 /* DataError.swift */,
+				BCBF19962BB3BDD000B8E855 /* DataFetchService.swift */,
+				BCBF19B52BB3C71A00B8E855 /* DataSaveService.swift */,
+				BCBF198B2BB390A300B8E855 /* FileDataService.swift */,
+				BCBF19C32BB3DE8C00B8E855 /* OrchestrateDataService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";

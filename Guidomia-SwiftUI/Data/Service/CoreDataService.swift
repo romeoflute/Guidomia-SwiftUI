@@ -9,11 +9,12 @@ import Foundation
 import CoreData
 
 final class CoreDataService: DataFetchService {
-    let container: NSPersistentContainer = NSPersistentContainer(name: "Cars")
+    let container: NSPersistentContainer
     
     /// Default init method. Load the Core Data container
-    init() {
-        container.loadPersistentStores { _, _ in }
+    init(container: NSPersistentContainer = NSPersistentContainer(name: "Cars")) {
+        self.container = container
+        self.container.loadPersistentStores { _, _ in }
     }
     
     /// Implements DataFetchService to fetch cars from core data
