@@ -26,7 +26,16 @@ final class CoreDataServiceTests: XCTestCase {
         container = nil
     }
     
-    func test_saveCarsAndLoadCars_persistsInCoreData() async {
+    func test_loadCarsWithoutPriorSaving_fetchesNoCar() async {
+        do {
+            let coreDataCars = try await sut.loadCars()
+            XCTAssertEqual(coreDataCars.count, 0)
+        } catch {
+            XCTFail("Failed to load cars from CoreData")
+        }
+    }
+        
+    func test_saveCarsThenLoadCars_persistsInCoreData() async {
         let carCount = 4
         let cars = createCars(carCount)
         do {
@@ -36,7 +45,17 @@ final class CoreDataServiceTests: XCTestCase {
         } catch {
             XCTFail("Unable to save cars in Core Data")
         }
-        
+    }
+    
+    func test_fetchWrongEntity_resultsInError() async {
+        sut = CoreDataService(container: container, entityName: "CDVan")
+        do {
+            let coreDataCars = try await sut.loadCars()
+            XCTFail("Failed to load cars from CoreData")
+        } catch {
+            XCTAssertEqual(error.localizedDescription, DataError.unableToFetchFromCoreData.localizedDescription
+            )
+        }
     }
     
     // Mark: - Helpers

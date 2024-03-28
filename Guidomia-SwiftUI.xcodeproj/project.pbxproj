@@ -11,8 +11,6 @@
 		BCBF195F2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF195E2BB38E1B00B8E855 /* Guidomia_SwiftUIApp.swift */; };
 		BCBF19632BB38E1F00B8E855 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19622BB38E1F00B8E855 /* Assets.xcassets */; };
 		BCBF19662BB38E1F00B8E855 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19652BB38E1F00B8E855 /* Preview Assets.xcassets */; };
-		BCBF197A2BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF19792BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift */; };
-		BCBF197C2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF197B2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift */; };
 		BCBF198A2BB3907800B8E855 /* Cars.json in Resources */ = {isa = PBXBuildFile; fileRef = BCBF19892BB3907800B8E855 /* Cars.json */; };
 		BCBF198C2BB390A300B8E855 /* FileDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF198B2BB390A300B8E855 /* FileDataService.swift */; };
 		BCBF198F2BB3917600B8E855 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBF198E2BB3917600B8E855 /* Car.swift */; };
@@ -51,13 +49,6 @@
 			remoteGlobalIDString = BCBF195A2BB38E1B00B8E855;
 			remoteInfo = "Guidomia-SwiftUI";
 		};
-		BCBF19762BB38E1F00B8E855 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BCBF19532BB38E1B00B8E855 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BCBF195A2BB38E1B00B8E855;
-			remoteInfo = "Guidomia-SwiftUI";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -67,9 +58,6 @@
 		BCBF19622BB38E1F00B8E855 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBF19652BB38E1F00B8E855 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCBF196B2BB38E1F00B8E855 /* Guidomia-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guidomia-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCBF19752BB38E1F00B8E855 /* Guidomia-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guidomia-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BCBF19792BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIUITests.swift; sourceTree = "<group>"; };
-		BCBF197B2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guidomia_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BCBF19892BB3907800B8E855 /* Cars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Cars.json; sourceTree = "<group>"; };
 		BCBF198B2BB390A300B8E855 /* FileDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDataService.swift; sourceTree = "<group>"; };
 		BCBF198E2BB3917600B8E855 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
@@ -115,13 +103,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCBF19722BB38E1F00B8E855 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -130,7 +111,6 @@
 			children = (
 				BCBF195D2BB38E1B00B8E855 /* Guidomia-SwiftUI */,
 				BCBF196E2BB38E1F00B8E855 /* Guidomia-SwiftUITests */,
-				BCBF19782BB38E1F00B8E855 /* Guidomia-SwiftUIUITests */,
 				BCBF195C2BB38E1B00B8E855 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -140,7 +120,6 @@
 			children = (
 				BCBF195B2BB38E1B00B8E855 /* Guidomia-SwiftUI.app */,
 				BCBF196B2BB38E1F00B8E855 /* Guidomia-SwiftUITests.xctest */,
-				BCBF19752BB38E1F00B8E855 /* Guidomia-SwiftUIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,15 +154,6 @@
 				BCBF80152BB4E07300E2D18D /* Service */,
 			);
 			path = "Guidomia-SwiftUITests";
-			sourceTree = "<group>";
-		};
-		BCBF19782BB38E1F00B8E855 /* Guidomia-SwiftUIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BCBF19792BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift */,
-				BCBF197B2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift */,
-			);
-			path = "Guidomia-SwiftUIUITests";
 			sourceTree = "<group>";
 		};
 		BCBF19882BB3901100B8E855 /* Data */ = {
@@ -358,24 +328,6 @@
 			productReference = BCBF196B2BB38E1F00B8E855 /* Guidomia-SwiftUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BCBF19742BB38E1F00B8E855 /* Guidomia-SwiftUIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BCBF19852BB38E1F00B8E855 /* Build configuration list for PBXNativeTarget "Guidomia-SwiftUIUITests" */;
-			buildPhases = (
-				BCBF19712BB38E1F00B8E855 /* Sources */,
-				BCBF19722BB38E1F00B8E855 /* Frameworks */,
-				BCBF19732BB38E1F00B8E855 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BCBF19772BB38E1F00B8E855 /* PBXTargetDependency */,
-			);
-			name = "Guidomia-SwiftUIUITests";
-			productName = "Guidomia-SwiftUIUITests";
-			productReference = BCBF19752BB38E1F00B8E855 /* Guidomia-SwiftUIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -390,10 +342,6 @@
 						CreatedOnToolsVersion = 15.3;
 					};
 					BCBF196A2BB38E1F00B8E855 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = BCBF195A2BB38E1B00B8E855;
-					};
-					BCBF19742BB38E1F00B8E855 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = BCBF195A2BB38E1B00B8E855;
 					};
@@ -414,7 +362,6 @@
 			targets = (
 				BCBF195A2BB38E1B00B8E855 /* Guidomia-SwiftUI */,
 				BCBF196A2BB38E1F00B8E855 /* Guidomia-SwiftUITests */,
-				BCBF19742BB38E1F00B8E855 /* Guidomia-SwiftUIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -431,13 +378,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BCBF19692BB38E1F00B8E855 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCBF19732BB38E1F00B8E855 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -490,15 +430,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCBF19712BB38E1F00B8E855 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BCBF197A2BB38E1F00B8E855 /* Guidomia_SwiftUIUITests.swift in Sources */,
-				BCBF197C2BB38E1F00B8E855 /* Guidomia_SwiftUIUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -506,11 +437,6 @@
 			isa = PBXTargetDependency;
 			target = BCBF195A2BB38E1B00B8E855 /* Guidomia-SwiftUI */;
 			targetProxy = BCBF196C2BB38E1F00B8E855 /* PBXContainerItemProxy */;
-		};
-		BCBF19772BB38E1F00B8E855 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BCBF195A2BB38E1B00B8E855 /* Guidomia-SwiftUI */;
-			targetProxy = BCBF19762BB38E1F00B8E855 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -732,42 +658,6 @@
 			};
 			name = Release;
 		};
-		BCBF19862BB38E1F00B8E855 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT6YTKK67V;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flauta.romeo.Guidomia-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Guidomia-SwiftUI";
-			};
-			name = Debug;
-		};
-		BCBF19872BB38E1F00B8E855 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT6YTKK67V;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.flauta.romeo.Guidomia-SwiftUIUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Guidomia-SwiftUI";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -794,15 +684,6 @@
 			buildConfigurations = (
 				BCBF19832BB38E1F00B8E855 /* Debug */,
 				BCBF19842BB38E1F00B8E855 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BCBF19852BB38E1F00B8E855 /* Build configuration list for PBXNativeTarget "Guidomia-SwiftUIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCBF19862BB38E1F00B8E855 /* Debug */,
-				BCBF19872BB38E1F00B8E855 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,18 +10,23 @@ import CoreData
 
 final class CoreDataService: DataFetchService {
     let container: NSPersistentContainer
+    let entityName: String
     
     /// Default init method. Load the Core Data container
-    init(container: NSPersistentContainer = NSPersistentContainer(name: "Cars")) {
+    init(container: NSPersistentContainer = NSPersistentContainer(name: "Cars"), entityName: String = "CDCar") {
         self.container = container
+        self.entityName = entityName
         self.container.loadPersistentStores { _, _ in }
     }
     
     /// Implements DataFetchService to fetch cars from core data
     func loadCars() async throws -> [Car] {
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CDCar")
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
         let context = container.viewContext
         do {
+            guard container.managedObjectModel.entitiesByName[entityName] != nil else {
+                throw DataError.unableToFetchFromCoreData
+            }
             let cdCars: [CDCar] = try context.fetch(fetchRequest) as? [CDCar] ?? []
             debugPrint("cd cars: \(cdCars)")
             return Car.convertFromCDCars(cdCars)
