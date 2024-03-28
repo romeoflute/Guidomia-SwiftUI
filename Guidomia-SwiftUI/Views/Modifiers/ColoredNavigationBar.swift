@@ -1,5 +1,5 @@
 //
-//  ViewExtension.swift
+//  ColoredNavigationBar.swift
 //  Guidomia-SwiftUI
 //
 //  Created by Romeo Flauta on 3/27/24.
