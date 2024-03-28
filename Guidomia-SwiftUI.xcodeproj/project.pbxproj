@@ -139,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				BC9BDF1D2BB5629A00170086 /* Readme.md */,
+				BC9BDF212BB5688300170086 /* img */,
 				BCBF195D2BB38E1B00B8E855 /* Guidomia-SwiftUI */,
 				BCBF196E2BB38E1F00B8E855 /* Guidomia-SwiftUITests */,
 				BCBF195C2BB38E1B00B8E855 /* Products */,
@@ -157,7 +158,6 @@
 		BCBF195D2BB38E1B00B8E855 /* Guidomia-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				BC9BDF212BB5688300170086 /* img */,
 				BCBF19C52BB3EA4100B8E855 /* App */,
 				BCBF19C62BB3EA4B00B8E855 /* Assets */,
 				BCBF19882BB3901100B8E855 /* Data */,
