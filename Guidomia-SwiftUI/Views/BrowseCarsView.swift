@@ -28,6 +28,7 @@ struct BrowseCarsView: View {
                     .foregroundStyle(.white)
                     .fontWeight(.bold)
                     .fontDesign(.serif)
+                    .accessibilityLabel("appName")
                 ,
                 trailing:
                     Button {
@@ -60,6 +61,7 @@ struct BrowseCarsView: View {
             
             ForEach(viewModel.filterListedCars(), id: \.id) { car in
                 CarView(viewModel: viewModel, car: car)
+                    .accessibilityIdentifier("\(car.model)")
             }
         }
         .listStyle(.plain)

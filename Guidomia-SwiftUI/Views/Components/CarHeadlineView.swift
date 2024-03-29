@@ -15,9 +15,11 @@ struct CarHeadlineView: View {
             Text(carTitle())
                 .font(.headline)
                 .carHeadlineStyle()
+                .accessibilityIdentifier("carTitle")
             Text(displayPrice())
                 .font(.footnote)
                 .carHeadlineStyle()
+                .accessibilityIdentifier("displayPrice")
         }
     }
     

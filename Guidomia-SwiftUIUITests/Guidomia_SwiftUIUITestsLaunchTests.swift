@@ -1,0 +1,35 @@
+//
+//  Guidomia_SwiftUIUITestsLaunchTests.swift
+//  Guidomia-SwiftUIUITests
+//
+//  Created by Romeo Flauta on 3/29/24.
+//
+
+import XCTest
+
+final class Guidomia_SwiftUIUITestsLaunchTests: XCTestCase {
+
+    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+        true
+    }
+
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+    }
+
+    func testLaunch() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        XCUIApplication()/*@START_MENU_TOKEN@*/.navigationBars["_TtGC7SwiftUI32NavigationStackHosting"].staticTexts["appName"]/*[[".otherElements[\"navStack\"].navigationBars[\"_TtGC7SwiftUI32NavigationStackHosting\"]",".otherElements[\"appName\"].staticTexts[\"appName\"]",".staticTexts[\"appName\"]",".navigationBars[\"_TtGC7SwiftUI32NavigationStackHosting\"]"],[[[-1,3,1],[-1,0,1]],[[-1,2],[-1,1]]],[0,0]]@END_MENU_TOKEN@*/.tap()
+        
+
+        // Insert steps here to perform after app launch but before taking a screenshot,
+        // such as logging into a test account or navigating somewhere in the app
+
+        let attachment = XCTAttachment(screenshot: app.screenshot())
+        attachment.name = "Launch Screen"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+    }
+}
