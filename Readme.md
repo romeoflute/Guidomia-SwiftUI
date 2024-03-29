@@ -14,7 +14,7 @@ I developed Guidomia using Xcode 15.3 and iOS 17.4.
 
 ## Discussion
 
-Aside from meeting the requirements of the coding challenge, I focused on using techniques including dependency injection, protocol oriented programming, decoupling of dependencies that facilitate unit testing. I have come to value unit testing because, as Jon Reid [observed](https://qualitycoding.org), a "robust suite of unit tests acts as a safety harness, giving you [courage](https://www.theverge.com/2016/9/7/12838024/apple-iphone-7-plus-headphone-jack-removal-courage) to make bold changes." In nuts-and-bolts terms, dependency injection makes objects testable by isolating dependencies and side effects. Guidomia's unit-test coverage is above 90%.
+Aside from meeting the requirements of the coding challenge, I focused on using techniques including dependency injection, protocol oriented programming, decoupling of dependencies that facilitate unit testing. I have come to value unit testing because, as Jon Reid [observed](https://qualitycoding.org), a "robust suite of unit tests acts as a safety harness, giving you [courage](https://www.theverge.com/2016/9/7/12838024/apple-iphone-7-plus-headphone-jack-removal-courage) to make bold changes." In nuts-and-bolts terms, dependency injection makes objects testable by isolating dependencies and side effects. Guidomia's unit-test coverage is above 90%. I have also included UI testing. 
 
 Guidomia demonstrates Swift concurrency features [concurrency](https://github.com/apple/swift-evolution/blob/main/proposals/0296-async-await.md). I made use of MainActor, async, and await syntax. 
 
