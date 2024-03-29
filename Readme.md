@@ -42,6 +42,10 @@ My research [indicates](https://forum.juce.com/t/addinstanceforfactory-no-factor
 
 Another warning is `ForEach<Array<String>, String, Optional<HStack<TupleView<(Text, Text)>>>>: the ID  occurs multiple times within the collection, this will give undefined results!`. This is a result of displaying an array of strings. These strings are guaranteed to be unique. And though I used self as id: id=\.self, this warning occurs. This is harmless to the app. 
 
+## Next Task
+
+I did not have the time to work on the app's Accessibility features. I think this is important.
+
 ## Screenshots
 
 | Browsing top | Browsing bottom |
