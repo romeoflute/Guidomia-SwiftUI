@@ -29,7 +29,7 @@ final class Guidomia_SwiftUIUITests: XCTestCase {
     }
 
     func test_onLaunch_firstRowIsExpanded() throws {
-        let pros = app.otherElements.children(matching: .staticText).matching(identifier: "Pros :").firstMatch
+        let pros = app.collectionViews.staticTexts["Pros :"].firstMatch
         
         XCTAssertTrue(pros.exists)
         XCTAssertEqual(pros.identifier, "Roadster")
@@ -37,8 +37,8 @@ final class Guidomia_SwiftUIUITests: XCTestCase {
     
     func test_tappingTheSecondRow_expandsSecondRowAndCompactsFirstRow() throws {
         let collectionViewsQuery = app.collectionViews
-        collectionViewsQuery/*@START_MENU_TOKEN@*/.images["Alpine"]/*[[".cells.images[\"Alpine\"]",".images[\"Alpine\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
-        collectionViewsQuery/*@START_MENU_TOKEN@*/.images["RangeRover"]/*[[".cells.images[\"RangeRover\"]",".images[\"RangeRover\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.swipeUp()
+        collectionViewsQuery.images["Alpine"].firstMatch.swipeUp()
+        collectionViewsQuery/*@START_MENU_TOKEN@*/.images["RangeRover"]/*[[".cells.images[\"RangeRover\"]",".images[\"RangeRover\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.firstMatch.swipeUp()
         
         let allPros = app.otherElements.children(matching: .staticText).matching(identifier: "Pros :")
         
